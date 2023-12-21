@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if ele %}
+{% for e in ele %}
+<h3>id - {{e.id}} name - {{e.name}} </h3>
+{% endfor %}
+{% else %}
+<h3>No Data Available</h3>
+{% endif %}
+{% comment %} {{ele}} {% endcomment %}
+{% endblock %}
